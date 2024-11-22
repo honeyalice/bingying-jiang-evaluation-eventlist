@@ -3,15 +3,15 @@ function createEditableRow(event = {}) {
 
   // Editable Event Name
   const nameCell = document.createElement("td");
-  nameCell.innerHTML = `<input type="text" placeholder="Enter Event Name" value="${event.name || ""}">`;
+  nameCell.innerHTML = `<input type="text" value="${event.eventName || ""}">`;
 
   // Editable Start Date
   const startCell = document.createElement("td");
-  startCell.innerHTML = `<input type="date" value="${event.start || ""}">`;
+  startCell.innerHTML = `<input type="date" value="${event.startDate || ""}">`;
 
   // Editable End Date
   const endCell = document.createElement("td");
-  endCell.innerHTML = `<input type="date" value="${event.end || ""}">`;
+  endCell.innerHTML = `<input type="date" value="${event.endDate || ""}">`;
 
   // Actions
   const actionsCell = document.createElement("td");
