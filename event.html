@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Event Management</title>
+</head>
+<body>
+  <div class="wrapper">
+    <button id="add-event" class="add-btn">
+      Add New Event
+    </button>
+    <div class="container">
+      <table id="eventTable">
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./eventAPI.js"></script>
+  <script src="./event.js"></script>
+</body>
+</html>
